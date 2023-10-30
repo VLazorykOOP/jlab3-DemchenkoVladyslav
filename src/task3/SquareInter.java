@@ -1,4 +1,4 @@
-package task2;
+package task3;
 
 import RootClasses.Rootable;
 
@@ -6,13 +6,11 @@ public class SquareInter implements Rootable {
     private double a;
     private double b;
     private double c;
-
     public SquareInter(double a, double b, double c) {
         this.a = a;
         this.b = b;
         this.c = c;
     }
-
     @Override
     public void calculateRoots() {
         double discriminant = b * b - 4 * a * c;
@@ -27,7 +25,6 @@ public class SquareInter implements Rootable {
             System.out.println("No real roots");
         }
     }
-
     @Override
     public void printResult() {
         calculateRoots();

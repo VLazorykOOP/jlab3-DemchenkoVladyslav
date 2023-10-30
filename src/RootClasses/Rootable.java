@@ -1,4 +1,4 @@
-package task2;
+package RootClasses;
 
 public interface Rootable {
     void calculateRoots();

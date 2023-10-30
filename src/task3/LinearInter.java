@@ -1,17 +1,14 @@
-package task2;
+package task3;
 
 import RootClasses.Rootable;
 
 public class LinearInter implements Rootable {
-
     private double a;
     private double b;
-
     public LinearInter(double a, double b) {
         this.a = a;
         this.b = b;
     }
-
     @Override
     public void calculateRoots() {
         if (a == 0) {
@@ -21,7 +18,6 @@ public class LinearInter implements Rootable {
             System.out.println("The root of the linear equation is: " + root);
         }
     }
-
     @Override
     public void printResult() {
         calculateRoots();

@@ -1,2 +1,28 @@
-package task2;public class Linear {
+package task2;
+
+import RootClasses.Root;
+
+public class Linear extends Root {
+    private double a;
+    private double b;
+
+    public Linear(double a, double b) {
+        this.a = a;
+        this.b = b;
+    }
+
+    @Override
+    public void calculateRoots() {
+        if (a == 0) {
+            System.out.println("No roots (a must be non-zero for a linear equation)");
+        } else {
+            double root = -b / a;
+            System.out.println("The root of the linear equation is: " + root);
+        }
+    }
+
+    @Override
+    public void printResult() {
+        calculateRoots();
+    }
 }
